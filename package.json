@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Bowerpower85/MemoExpress/issues"
   },
-  "homepage": "https://github.com/Bowerpower85/MemoExpress#readme"
+  "homepage": "https://github.com/Bowerpower85/MemoExpress#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
