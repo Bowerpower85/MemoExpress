@@ -1,17 +1,17 @@
-// Linking the db.json to the route.
+// Linking the db.json to the app.
 const db = require('../db/db.json');
 
 const fs = require('fs');
 const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//route
-module.exports = function(route) {
-  route.get('/api/notes' function(req, res) {
+//app
+module.exports = function(app) {
+  app.get('/api/notes' function(req, res) {
     res.json(db);
   });
 
-  route.post('api/notes', function(req, res) {
+  app.post('api/notes', function(req, res) {
     let newNote = req.body;
     let lastId = db[db.length - 1]['id'];
     let newId = lastId + 1;
@@ -27,7 +27,7 @@ module.exports = function(route) {
     res.json(newNote);
   });
 
-  route.delete('/api/notes/:id', function(req, res) {
+  app.delete('/api/notes/:id', function(req, res) {
     console.log('Req.params;', req.params);
     let chosenId = parseInt(req.params.id);
     console.log(chosenId);
