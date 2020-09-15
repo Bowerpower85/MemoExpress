@@ -14,12 +14,11 @@ app.use(express.json());
 app.get ('/api/notes', function(err, res) {
     try {
         currentNote = fs.readFileSync('db/db.json', 'utf-8');
-        console.log('reading!')
+        
 
         currentNote = JSON.parse(currentNote);
     } catch (err) {
-        console.log('n\ error (in app.get.catch):');
-        console.log(err);
+       throw err;
     };
     res.json(currentNote);
 });
@@ -40,7 +39,6 @@ app.post('/api/notes', function(req, res) {
 
     } catch (err) {
         throw err;
-        console.error(err);
     }
 });
 
@@ -58,7 +56,6 @@ app.delete('/api/notes/:id', function(req, res) {
         res.send(JSON.parse(currentNote));
     } catch (err) {
         throw err;
-        console.log(err);
     }
 });
 
