@@ -7,8 +7,7 @@ const PORT = process.env.PORT || 4251
 
 let currentNote = {};
 
-app.use(express.static(path.join(__dirname, index.html)))
-app.use(express.static(path.join(__dirname, notes.html)))
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 
@@ -64,11 +63,11 @@ app.delete('/api/notes/:id', function(req, res) {
 });
 
 app.get('/notes', function(req, res) {
-    res.sendFile(path.join(__dirname, 'notes.html'));
+    res.sendFile(path.join(__dirname, 'public/notes.html'));
 });
 
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 app.get('/api/notes/:id', function(req, res) {
