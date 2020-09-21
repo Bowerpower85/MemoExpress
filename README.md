@@ -21,7 +21,7 @@
   ## Test
   There are no testing proticals at this time.
   ## Questions
-  If you have any questions, contact Bowerpower85 on GitHub or email at undefined.
+  If you have any questions, contact Bowerpower85 on GitHub or email at bowerpower85@gmail.com.
   ## License
   MIT License 
   Copyright (c) [year] [Bowerpower85]
