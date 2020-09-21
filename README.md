@@ -43,6 +43,6 @@
   ## Author
   ![GitHub profile pic](https://avatars0.githubusercontent.com/u/56975398?v=4)
   
-  <img src="public/assets/MemoExpress.png" height="400px" width="600px">
+  <img src="public/assets/MemoExpress.png" height="700px" width="800px">
   
   https://drive.google.com/file/d/1UY4egw0-9Z8vqbSIiAwI1r6zaSqhXXV_/view
