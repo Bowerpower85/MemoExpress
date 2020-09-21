@@ -1,9 +1,8 @@
 
-  # Project Title : Team Generator
+  # Project Title : Memo Express
   ## Project Description:
-  The TeamGenerator is a application that bulids a list of team members based on client input.
-  ## Badges
-  !(https://img.shields.io/github/repo-size/:Bowerpower85/:undefined)
+  This application allows the client to create notes and save them to recall later. As the client accomplishes a task that note can be deleted.
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -14,13 +13,13 @@
   * [Author](#Author)
   * [Badges](#badges)
   ## Installation
-  Fork my repository and install node. Make sure you install all the required dependencies, then run node app.js.
+  You can fork my repository and download all ther required dependencies but this is a cli application that is deployed on heroku.
   ## Usage
-  You will be prompted with questions about your team, answer them as throughly as possible. The answers will then be generated in a team html file.
+  Run node server, then you can use localhost to check the application is functional and if desired deploy to somewhere like Heroku.
   ## Contributors
   
   ## Test
-  there are a series of test for the different classes that can be run with the node package jest.
+  There are no testing proticals at this time.
   ## Questions
   If you have any questions, contact Bowerpower85 on GitHub or email at undefined.
   ## License
